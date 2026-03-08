@@ -1,114 +1,130 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assests/style.css">
-        <title>SIMPLE PORTFOLIO</title>
-    </head>
-    <body>
-    <header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYDEV — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assests/style.css">
+</head>
+<body>
 
-        <div class="header-container">
-                
-            <div class="right-header-container">
-                <p>JAYDEV</p>
-            
-            <nav class="">
-                        <a href="#card-holder">Projects</a>
-                        <a href="#about-me">About Me</a>
-                        <a href="#contacts">Contacts</a>
-            </nav>
+<header>
+    <div class="header-container">
+        <a href="#" class="logo">JAY<span>DEV</span></a>
 
+        <nav id="main-nav">
+            <a href="#about-me">About</a>
+            <a href="#card-holder">Projects</a>
+            <a href="#contacts">Contact</a>
+        </nav>
+
+        <div class="right-nav">
+
+            <button id="hamburger">☰</button>
+            <button id="dark-mode-button">
+                <img src="https://cdn-icons-png.flaticon.com/128/94/94762.png" alt="toggle dark mode" id="dark-mode-icon">
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu">
+        <a href="#about-me" class="mobile-link">About</a>
+        <a href="#card-holder" class="mobile-link">Projects</a>
+        <a href="#contacts" class="mobile-link">Contact</a>
+
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <span class="hero-tag">👋 Available for work</span>
+        <h1>Hi, I'm Jay<br><em>Beginner</em> Developer</h1>
+        <p>I build clean, functional web experiences. Based in Tagum City, Philippines — always learning, always shipping.</p>
+        <div class="hero-cta">
+            <a href="#card-holder" class="btn-primary">View Projects →</a>
+            <a href="#contacts" class="btn-secondary">Get in Touch</a>
+        </div>
+    </section>
+
+    <section class="about-section" id="about-me">
+        <div class="about-inner">
+            <div class="about-img-wrap">
+                <img src="https://imgs.search.brave.com/s35qmYZXxfHcXLGzJhTyAcmZtzvJElYA788gbfHaZl0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUyODAx/ODQuanBn" id="profile-pic" alt="Jay Ampong">
             </div>
-            
-            <nav class="left-header container">
-                        <a href=#>Signup</a>
-                        <a href=#>Login</a>
-                        <button id="dark-mode-button" ><img src="https://cdn-icons-png.flaticon.com/128/94/94762.png" alt="night"  id="dark-mode-icon"> </button>
-            </nav>
-        </div>
-            
-    </header>
-    <main>
-        <div class="body-header">
-            <H1>Welcome Gwapa og Gwapo</H1>
-            <p>Ngi murag gwapa/gwapo pud . feeling pa more yarn </p>
-        </div>
-        
-        <section class="about-me-body" id="about-me">
-            <div class="about-me-holder">
-                <img src="https://imgs.search.brave.com/s35qmYZXxfHcXLGzJhTyAcmZtzvJElYA788gbfHaZl0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUyODAx/ODQuanBn" id="profile-pic">
-              <div class="about-me-holder-text">
-                <h1>My Name</h1>
-                <p>Jay Ampong</p>
-                <h2>Begginer Programer</h2>
-                
-                <div id="info-card">
-                    <strong>Age:<i>20</i></strong>    
-                    <strong>Adress:<i>Prk.Magtalisay Mankilam Tagum City</i></strong>    
-                    <strong>Gender:<i>Male</i></strong>    
-
+            <div class="about-text">
+                <span class="section-label">About Me</span>
+                <h2>Jay Ampong</h2>
+                <p>A beginner programmer passionate about building things for the web. I enjoy turning ideas into reality through clean code and thoughtful design.</p>
+                <div class="info-grid">
+                    <div class="info-item"><span>Age</span><strong>20</strong></div>
+                    <div class="info-item"><span>Gender</span><strong>Male</strong></div>
+                    <div class="info-item"><span>Location</span><strong>Tagum City</strong></div>
+                    <div class="info-item"><span>Role</span><strong>Web Developer</strong></div>
                 </div>
-
-              </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-<div class="Title-Seperator-Container">
-        <h2>Projects</h2>
-</div>
-
-        <section class="projects-body" id="card-holder">
+    <section class="projects-section">
+        <div class="section-header">
+            <h2>Projects</h2>
+            <p>Things I've built</p>
+        </div>
+        <div id="card-holder">
             <article class="project-card">
-            
                 <img src="https://camo.githubusercontent.com/1b6a24dfef94c770f12a07bf6c2bfc4cf88d66a63935ae0482fe36edcb926148/68747470733a2f2f692e696d6775722e636f6d2f6d5a7a32654b7a2e706e67" alt="lending system" class="project-image">
-                <div class="description-holder">
+                <div class="project-content">
                     <strong>Simple Lending System</strong>
-                    <p>pait kapoy explain naa na sa pagalan </p>
+                    <p>A straightforward lending management system built to track loans and borrowers efficiently.</p>
                 </div>
-                <button class="article-button">Visit Projects</button>
+                <button class="article-button">Visit Project →</button>
             </article>
             <article class="project-card">
-            
-                <img   alt="weather forecast" src="https://camo.githubusercontent.com/e6479ebb11f4fdc2e7456abbba30aac53fca52416466b81b3c78c78c70e23557/68747470733a2f2f692e696d6775722e636f6d2f537557394455332e706e67" class="project-image">
-                <div class="description-holder">
+                <img src="https://camo.githubusercontent.com/e6479ebb11f4fdc2e7456abbba30aac53fca52416466b81b3c78c78c70e23557/68747470733a2f2f692e696d6775722e636f6d2f537557394455332e706e67" alt="weather forecast" class="project-image">
+                <div class="project-content">
                     <strong>Simple Weather Forecast</strong>
-                    <p>naa na sa pagalan ngano e explain pa man?</p>
+                    <p>A weather app that fetches real-time forecast data and displays it in a clean interface.</p>
                 </div>
-                <button class="article-button">Visit Projects</button>
+                <button class="article-button">Visit Project →</button>
             </article>
             <article class="project-card">
-                <img alt="Simple-age-course calculator" src="https://camo.githubusercontent.com/7cd4287382a8cb66c2e14bcf0948185fca318d0cb429b10189e9aa79e59a616b/68747470733a2f2f692e696d6775722e636f6d2f4454684f726d572e706e67" class="project-image">
-                <div class="description-holder">
+                <img src="https://camo.githubusercontent.com/7cd4287382a8cb66c2e14bcf0948185fca318d0cb429b10189e9aa79e59a616b/68747470733a2f2f692e696d6775722e636f6d2f4454684f726d572e706e67" alt="age calculator" class="project-image">
+                <div class="project-content">
                     <strong>Age-Course Calculator</strong>
-                    <p>huh? wala ka kasabot ani na project? SAME :)</p>
+                    <p>Calculates age and recommends courses based on user input. Practical and straightforward.</p>
                 </div>
-                <button class="article-button">Visit Projects</button>
+                <button class="article-button">Visit Project →</button>
             </article>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 
+<footer id="contacts">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="#" class="logo">JAY<span>DEV</span></a>
+            <p>Beginner developer based in<br>Tagum City, Philippines.<br>Open to opportunities.</p>
+        </div>
 
-    <footer>
         <div id="social-media">
             <a href="#">GitHub</a>
             <a href="#">LinkedIn</a>
             <a href="#">Facebook</a>
         </div>
 
-        <div id="reserved">
-            <p>2026 Jaydev. All rights reserved</p>
+        <div class="footer-contact">
+            <div id="sendEmail">
+                <textarea placeholder="Your message..." id="message"></textarea>
+                <input type="text" placeholder="Your email" id="email">
+                <button id="send">Send Message</button>
+            </div>
+            <p class="footer-meta">t4nyou2@gmail.com · 09165380935</p>
         </div>
+    </div>
+    <div class="footer-bottom">© 2026 Jaydev. All rights reserved.</div>
+</footer>
 
-        <div id="contacts">        
-            <P>Email: jayampong1759@gmail.com</P>
-            <p>Phone #: 09165380935</p>
-        </div>
-
-    </footer>
-        
-    <script src="assests/script.js"></script>
-    </body>
-
-    </html>
+<script src="assests/script.js"></script>
+</body>
+</html>
